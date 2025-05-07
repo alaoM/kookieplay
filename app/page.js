@@ -13,7 +13,7 @@ export default function Home() {
     >
       <div className="flex flex-col items-center justify-center w-full max-w-screen-md px-4 cursor-pointer">
         {/* Visible click target */}
-        <div className="relative flex items-center justify-center w-[50%] sm:w-[70%] md:w-[200px] h-auto opacity-0"   onClick={() => router.push("/")}>
+        <div className="relative flex items-center justify-center w-[50%] sm:w-[70%] md:w-[200px] h-auto opacity-0"   onClick={() => router.push("/kookiehouse")}>
           <Image
             src="/entersite/kookiehouse.png"
             alt="Enter Site"

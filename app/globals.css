@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #412320;
+  --foreground: #171717;
+  --navbar-height: 5rem; /* Adjust based on your navbar height */
+  --z-navbar: 100;
+  --z-toggle: 75;
+  --z-shadowbar: 71;
+  --z-shadowbar-container: 70;
+  --z-sidebar: 60;
+  --z-backdrop: 50;
+  --z-content: 40;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #412320;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-roboto), sans-serif; /* Optional override */
+  height: 100%;
+  width: 100%;
+}
+
+.dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+
+
+
+@media (min-width: 640px) {
+  :root {
+    --navbar-height: 4.5rem; /* Adjust for sm breakpoint */
+  }
+}
+
+/* Animation for sidebar */
+@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}

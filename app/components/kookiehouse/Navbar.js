@@ -16,9 +16,9 @@ const socialIcons = [
 const Navbar = ({collapsed, setCollapsed}) => {
 
   return (
-    <div className="relative w-full z-[100] flex flex-col">
+    <div className="relative w-full z-[100] flex flex-col ">
       {/* Top Bar */}
-      <div className="relative w-full h-20 sm:h-16">
+      <div className="relative w-full h-20 sm:h-16 p-10">
         <Image
           src="/navbar/header_bg_container.svg"
           alt="Navbar Top"
@@ -28,7 +28,7 @@ const Navbar = ({collapsed, setCollapsed}) => {
 
         <div className="absolute inset-0 flex items-center md:justify-between justify-evenly   sm:px-2 lg:px-6">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <div className="flex lg:w-1/4 items-center gap-2">
             <button onClick={() => setCollapsed(!collapsed)} className="md:hidden">
               <Image src="/navbar/menu.svg" alt="Menu" width={28} height={28} className="w-7 h-7 sm:w-8 sm:h-8" />
             </button>
@@ -51,7 +51,7 @@ const Navbar = ({collapsed, setCollapsed}) => {
           {/* Song Controls */}
          {/*  {!collapsed && ( */}
             <div className="md:flex flex-col items-start gap-1 md:w-auto hidden">
-              <p className="text-[#FF9E5E] font-extrabold text-xs text-center hidden lg:block font-[family-name:var(--font-lilita)]">Song Title</p>
+              <p className="text-[#FF9E5E] text-xs text-center hidden lg:block font-[family-name:var(--font-lilita)]">Song Title</p>
               <div className="flex justify-center">
                 <div className="bg-[#4f2628] border-[3px] border-[#3d221f] dot-pattern rounded-2xl p-1 flex gap-1 shadow-inner">
                   {[
@@ -81,7 +81,7 @@ const Navbar = ({collapsed, setCollapsed}) => {
           {/* Social Icons */}
           {/* {!collapsed && ( */}
             <div className="lg:flex flex-col items-start gap-1 md:w-auto hidden">
-              <p className="text-[#FF9E5E] font-extrabold text-xs text-left font-[family-name:var(--font-lilita)]">Social</p>
+              <p className="text-[#FF9E5E] text-xs text-left font-[family-name:var(--font-lilita)]">Social</p>
               <div className="flex justify-center">
                 <div className="bg-[#4f2628] border-[3px] border-[#3d221f] dot-pattern rounded-2xl p-1 flex flex-wrap gap-1 shadow-inner">
                   {socialIcons.map((data, index) => (
@@ -104,10 +104,10 @@ const Navbar = ({collapsed, setCollapsed}) => {
 
           {/* Kookie Balance */}
           <div className="flex flex-col items-start gap-1 md:w-auto sm:h:14">
-            <p className="text-[#FF9E5E] font-extrabold text-xs text-center hidden lg:block font-[family-name:var(--font-lilita)]">Kookie Balance</p>
+            <p className="text-[#FF9E5E] text-xs text-center hidden lg:block font-[family-name:var(--font-lilita)]">Kookie Balance</p>
             <div className="flex justify-center">
               <div className="flex items-center bg-[#4f2628] border-[3px] border-[#3d221f] dot-pattern rounded-2xl p-1 gap-1 shadow-inner h-full">
-                <p className="text-[#FF9E5E] font-extrabold text-sm font-[family-name:var(--font-lilita)]">100,000,000</p>
+                <p className="text-[#FF9E5E] text-sm font-[family-name:var(--font-lilita)]">100,000,000</p>
                 <button className="hover:scale-105 transition-transform h-full">
                   <Image
                     src="/navbar/plus_button.svg"
@@ -130,11 +130,11 @@ const Navbar = ({collapsed, setCollapsed}) => {
                   width={20}
                   height={20}
                 />
-                <p className="text-[#FF9E5E] font-extrabold text-sm uppercase font-[family-name:var(--font-lilita)]">NICKNAME1234</p>
+                <p className="text-[#FF9E5E] text-sm uppercase font-[family-name:var(--font-lilita)]">NICKNAME1234</p>
               </div>
               <div className="w-full bg-[#4f2628] border-[3px] border-[#3d221f] dot-pattern rounded-lg shadow-inner">
                 <p className="w-full h-5 bg-[url('/navbar/exp_gained_bar.svg')] bg-no-repeat bg-contain bg-left flex items-center justify-end">
-                  <span className="text-[#FF9E5E] font-extrabold text-[10px] pr-2 text-shadow-2xs text-shadow-[#3d221f] font-[family-name:var(--font-lilita)]">
+                  <span className="text-[#FF9E5E] text-[10px] pr-2 text-shadow-2xs text-shadow-[#3d221f] font-[family-name:var(--font-lilita)]">
                     EXP 2,245/4,500
                   </span>
                 </p>

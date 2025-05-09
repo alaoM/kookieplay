@@ -18,11 +18,10 @@ const Kookiehouselayout = ( {children}) => {
         <Sidebar  collapsed={collapsed} setCollapsed={setCollapsed}/>
 
         {/* Main content area */}
-        <main className={` flex-1
+        <main className="flex-1
           h-full overflow-auto
           transition-all duration-300 ease-in-out
-          ${collapsed ? 'md:p-[5] lg:p-[5]' : 'md:p-5]'}
-        `}>
+          ">
           {children}
         </main>
       </div>

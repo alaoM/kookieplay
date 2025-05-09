@@ -86,7 +86,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
             {/* Middle section - Scrollable menu items */}
             <div className="flex-1 overflow-hidden flex flex-col mt-3">
                 <div className="px-3 overflow-y-auto flex-1">
-                    <div className="space-y-2 lg:mt-2 pr-1">
+                    <div className="space-y-2 lg:space-y-5 lg:mt-2 pr-1">
                         {menuItems.map((item, index) => (
                             <div
                                 key={index}

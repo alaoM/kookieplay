@@ -32,6 +32,63 @@ body {
   background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
   background-size: 10px 10px;
 }
+.dot-pattern-white {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+.text-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #AAAFE6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.dotted-border {
+  border: 1px solid transparent;
+  border-radius: 1rem; /* same as rounded-2xl */
+  background:
+    radial-gradient(black 1px, transparent 1px),
+    #5452A4; /* background-color for the border gap */
+  background-size: 10px 10px;
+  background-position: center;
+  background-repeat: repeat;
+  padding: .4rem; /* optional, keeps content away from dotted area */
+}
+
+
+
+
+
+
+.inner-dotted {
+  position: relative;
+  background-color: #5452A4;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.inner-dotted::before {
+  content: "";
+  position: absolute;
+  inset: 4px; /* thickness of inner dotted border */
+  border-radius: 0.75rem;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 8px 8px;
+  background-repeat: repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.inner-dotted > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 
 

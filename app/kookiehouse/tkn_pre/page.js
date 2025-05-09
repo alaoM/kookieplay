@@ -75,7 +75,7 @@ const Page = () => {
                             {/* Left Side: Label + Input */}
                             <div className="flex flex-col w-1/3">
                                 <p className="text-[#CF8F78] text-[12px] font-bold font-[family-name:var(--font-inter)] mb-7">
-                                    You're Paying
+                                    You&apos;re Paying
                                 </p>
                                 <input
                                     type="text"
@@ -151,7 +151,7 @@ const Page = () => {
                             {/* Left Side: Label + Input */}
                             <div className="flex flex-col w-1/3">
                                 <p className="text-[#CF8F78] text-[12px] font-bold font-[family-name:var(--font-inter)] mb-7">
-                                    You're Buying
+                                    You7&apos;re Buying
                                 </p>
                                 <input
                                     type="text"

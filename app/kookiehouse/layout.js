@@ -1,17 +1,16 @@
 "use client";
 
 import Kookiehouselayout from "../components/kookiehouse/Kookiehouselayout";
-import { inter, lilitaOne, roboto } from "../font";
+import { AuthProvider } from "../contextProvider/AuthContext";
 
 export default function Layout({ children }) {
 
   return (
-
-    <Kookiehouselayout>
-    
+    <AuthProvider>
+      <Kookiehouselayout>
         {children}
-      
-    </Kookiehouselayout>
+      </Kookiehouselayout>
+    </AuthProvider>
 
   );
 }
